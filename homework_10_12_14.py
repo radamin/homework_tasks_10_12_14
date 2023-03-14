@@ -58,21 +58,41 @@
 # 5 6 -> 2 3
 
 
-s = int(input("Enter the sum of the numbers: "))
-p = int(input("Enter the product of the numbers: "))
-x = 0
-y = 0
+# s = int(input("Enter the sum of the numbers: "))
+# p = int(input("Enter the product of the numbers: "))
+# x = 0
+# y = 0
+#
+# flag = False
+# for i in range(1, 1001):
+#     for j in range(1, 1001):
+#         if i + j == s and i * j == p:
+#             flag = True
+#             x = i
+#             y = j
+#         j += 1
+#     i += 1
+# if flag:
+#     print(f"Peter thought of the numbers {y} and {x}")
+# else:
+#     print("Peter made a mistake in the calculations.")
 
-flag = False
-for i in range(1, 1001):
-    for j in range(1, 1001):
-        if i + j == s and i * j == p:
-            flag = True
-            x = i
-            y = j
-        j += 1
-    i += 1
-if flag:
-    print(f"Peter thought of the numbers {y} and {x}")
-else:
-    print("Peter made a mistake in the calculations.")
+
+# Задача 14
+# Необходимо вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
+# Пример:
+# 10 -> 1 2 4 8
+
+
+N = int(input("Enter number N: "))
+n = N
+flag, i = True, 0
+degree = []
+while flag:
+    if N >= 2 ** i:
+        degree.append(2 ** i)
+        i += 1
+    else:
+        flag = False
+
+print(f"Answer: {N} -> {degree}")

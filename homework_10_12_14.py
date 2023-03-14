@@ -84,15 +84,15 @@
 # 10 -> 1 2 4 8
 
 
-N = int(input("Enter number N: "))
-n = N
-flag, i = True, 0
-degree = []
-while flag:
-    if N >= 2 ** i:
-        degree.append(2 ** i)
-        i += 1
-    else:
-        flag = False
+# N = int(input("Enter number N: "))
+# n = N
+# flag, i = True, 0
+# degree = []
+# while flag:
+#     if N >= 2 ** i:
+#         degree.append(2 ** i)
+#         i += 1
+#     else:
+#         flag = False
 
-print(f"Answer: {N} -> {degree}")
+# print(f"Answer: {N} -> {degree}")
